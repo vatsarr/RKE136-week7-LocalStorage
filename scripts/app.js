@@ -41,7 +41,7 @@ btn.addEventListener("click", () => {
     url('${posterUrlInput}')`;
 
   movieTitle.value = "";
-  releaseYear.value = "";
+  movieReleaseYear.value = "";
   moviePosterUrl.value = "";
 
   if (!posterUrlInput) {
