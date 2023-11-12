@@ -9,8 +9,10 @@ let imageUrlInStorage = localStorage.getItem("imageUrl");
 
 if (titleInStorage && imageUrlInStorage) {
   movieTitleToDisplay.textContent = titleInStorage;
-  container.style.backgroundImage = `url('${imageUrlInStorage}')`;
-} else {
+  container.style.backgroundImage = `linear-gradient(
+      rgba(173, 216, 230, 0.747),
+      rgba(169, 169, 169, 0.745)
+    ), url('${imageUrlInStorage}')`;
 }
 
 btn.addEventListener("click", () => {
