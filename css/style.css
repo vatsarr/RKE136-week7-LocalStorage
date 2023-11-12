@@ -8,8 +8,8 @@
 }
 
 .container {
-  height: 400px;
-  width: 400px;
+  height: 450px;
+  width: 450px;
   border: none;
   border-radius: 10px;
   margin: 10rem auto;
@@ -26,15 +26,24 @@
 
 .container input,
 .container button {
+  border: none;
+  border-radius: 5px;
   display: block;
+  font-size: 1rem;
   margin: 1rem auto;
+  padding: 0.3rem;
+  width: 75%;
+  opacity: 0.75;
+}
+
+::placeholder {
+  opacity: 0.5;
 }
 
 .container button {
-  width: 4rem;
   padding: 0.3rem;
   color: lightblue;
-  background-color: rgb(70, 67, 67);
+  background-color: rgba(70, 67, 67);
 }
 
 .container h3 {
@@ -45,5 +54,6 @@
 
 .container p {
   color: rgb(255, 255, 255);
-  font-size: 1.5rem;
+  font-size: 2rem;
+  text-transform: capitalize;
 }
