@@ -39,11 +39,11 @@
 
 .container h3 {
   margin: 2rem;
-  color: rgb(76, 95, 101);
+  color: rgb(255, 255, 255);
   text-transform: capitalize;
 }
 
 .container p {
-  color: rgb(55, 68, 72);
+  color: rgb(255, 255, 255);
   font-size: 1.5rem;
 }
