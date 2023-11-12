@@ -9,13 +9,15 @@ const movieReleaseYearToDisplay = document.querySelector(".movieReleaseYear");
 
 //get from storage
 let titleInStorage = localStorage.getItem("title");
-let yearInStorage = localStorage.getItem("releaseYear");
+let yearInStorage = localStorage.getItem("year");
 let imageUrlInStorage = localStorage.getItem("imageUrl");
 
-//display
-if (titleInStorage && yearInStorage && imageUrlInStorage) {
+//set display values
+if (titleInStorage) {
   movieTitleToDisplay.textContent = `"${titleInStorage}"`;
+} else if (yearInStorage) {
   movieReleaseYearToDisplay.textContent = `(${yearInStorage})`;
+} else if (imageUrlInStorage) {
   container.style.backgroundImage = `linear-gradient(
       rgba(173, 216, 230, 0.747),
       rgba(169, 169, 169, 0.745)
@@ -30,7 +32,7 @@ btn.addEventListener("click", () => {
 
   //set local storage
   localStorage.setItem("title", movieTitleInput);
-  localStorage.setItem("releaseYear", movieReleaseYearInput);
+  localStorage.setItem("year", movieReleaseYearInput);
   localStorage.setItem("imageUrl", posterUrlInput);
 
   movieTitleToDisplay.textContent = `"${movieTitleInput}"`;
